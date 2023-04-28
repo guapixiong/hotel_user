@@ -4,7 +4,9 @@ import Vue from 'vue'
 import App from './App'
 
 Vue.config.productionTip = false
-
+Vue.prototype.imageBaseURL=function(){ //全局静态资源访问目录
+	return 'http://localhost:8081'
+}   
 App.mpType = 'app'
 
 const app = new Vue({

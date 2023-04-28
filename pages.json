@@ -11,6 +11,15 @@
                 "navigationBarTitleText": "可用房间列表",
                 "enablePullDownRefresh": false
             }
+        },
+		{
+            "path" : "pages/orderList/orderList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的订单",
+                "enablePullDownRefresh": false
+            }
+            
         }
     ],
 	"globalStyle": {
@@ -21,5 +30,17 @@
 		"app-plus": {
 			"background": "#efeff4"
 		}
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/orderList/orderList",
+				"text": "我的预定"
+			}
+		]
 	}
 }

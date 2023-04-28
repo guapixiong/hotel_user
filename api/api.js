@@ -18,3 +18,27 @@
 	        url:'/room/getAllRoomDetail'
 	    })
 	}
+	
+	/**
+	 * 获取当前可利用的房间
+	 * @param params
+	 * @returns {AxiosPromise}
+	 */
+	export function getAvailableRoomByTime(params){
+	    return request({
+	        url:'/room/getAvailableRoomByTime',
+	        params:params
+	    })
+	}
+	/**
+	 * 插入预定
+	 * @param params
+	 * @returns {AxiosPromise}
+	 */
+	export function insertReservation(params){
+	    return request({
+	        url:'/room/insertReservation',
+	        method:'post',
+	        data:params
+	    })
+	}

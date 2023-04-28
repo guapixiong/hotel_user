@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/roomList/roomList"
+    "pages/roomList/roomList",
+    "pages/orderList/orderList"
   ],
   "subPackages": [],
   "window": {
@@ -10,5 +11,18 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/orderList/orderList",
+        "text": "我的预定"
+      }
+    ]
+  },
+  "permission": {},
   "usingComponents": {}
 }

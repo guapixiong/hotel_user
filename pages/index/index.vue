@@ -87,11 +87,10 @@
 					property:this.property,
 					time:this.time,
 				}
-				console.log(params)
+				//console.log(params)
 				uni.navigateTo({
 					//url:"'/pages/roomList/roomList?params='+encodeURIComponent(JSON.stringify(params))"
-					url:"/pages/roomList/roomList?phone="+params.phone+"&property="+params.property
-					+"&time0="+params.time[0]+"&time1="+params.time[1]
+					url:"/pages/roomList/roomList?phone="+params.phone+"&time0="+params.time[0]+"&time1="+params.time[1]+"&nature="+params.property
 				})
 			}
 
